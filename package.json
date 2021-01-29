@@ -1,0 +1,13 @@
+{
+  "name": "mallaparser",
+  "version": "1.0.0",
+  "description": "Parsear la malla",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matias Ramirez",
+  "license": "ISC"
+}
