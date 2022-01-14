@@ -1,16 +1,29 @@
 {
   "name": "mallaparser",
   "version": "1.0.0",
-  "type": "module",
   "description": "Parsear la malla",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "deploy": "npm publish"
   },
-  "author": "Matias Ramirez",
+  "author": {
+    "name": "Matias Ramirez",
+    "email": "ramirezmatias946@gmail.com",
+    "url": "https://github.com/ramirezsebas"
+  },
+  "contributors": [
+    {"name":"Ricardo Gaona","url":"https://github.com/ricardogaona"}
+  ],
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IIN-2018/mallaparser.git"
+  },
   "dependencies": {
     "xlsx": "^0.16.9"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ricardogaona"
   }
 }
