@@ -28,6 +28,6 @@
     "xlsx": "^0.16.9"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ramirezsebas"
+    "registry": "https://npm.pkg.github.com"
   }
 }
