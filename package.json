@@ -1,5 +1,5 @@
 {
-  "name": "mallaparser",
+  "name": "@iin-2018/mallaparser",
   "version": "1.0.0",
   "description": "Parsear la malla",
   "main": "index.js",
@@ -13,7 +13,11 @@
     "url": "https://github.com/ramirezsebas"
   },
   "contributors": [
-    {"name":"Ricardo Gaona","url":"https://github.com/ricardogaona"}
+    {
+      "name": "Ricardo Gaona",
+      "email": "gaonaricardo06@gmail.com",
+      "url": "https://github.com/ricardogaona"
+    }
   ],
   "license": "ISC",
   "repository": {
@@ -24,6 +28,6 @@
     "xlsx": "^0.16.9"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ricardogaona"
+    "registry": "https://npm.pkg.github.com/@ramirezsebas"
   }
 }
