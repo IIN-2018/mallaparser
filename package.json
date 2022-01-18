@@ -1,5 +1,5 @@
 {
-  "name": "@ramirezsebas/mallaparser",
+  "name": "mallaparser",
   "version": "1.0.0",
   "description": "Parsear la malla",
   "main": "index.js",
