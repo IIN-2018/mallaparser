@@ -1,6 +1,6 @@
 {
-  "name": "@iin-2018/mallaparser",
-  "version": "1.0.0",
+  "name": "mallaparser",
+  "version": "0.1.0",
   "description": "Parsear la malla",
   "main": "index.js",
   "scripts": {
@@ -27,8 +27,5 @@
   },
   "dependencies": {
     "xlsx": "^0.16.9"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
