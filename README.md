@@ -1,10 +1,11 @@
 # Malla Parser
 ## Permite parsear el excel de la malla de los semestres de las carreras.
 
-## Para poder usar 
+## Para poder usar ejecutar:
 ```bash
     npm login --registry=https://npm.pkg.github.com --scope=@iin-2018
 ```
+Luego te va a pedir username, password (Que seria token personal) y correo.
 
 ## Instalacion
 ```bash
