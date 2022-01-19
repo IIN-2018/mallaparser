@@ -1,16 +1,16 @@
 const XLSX = require('xlsx');
 const fs = require('fs');
 
-const getCarreraData = ( pathName, carrera ) => {
+const getCarreraData = (pathName, carrera) => {
 
-    if(!fs.existsSync(pathName)) throw Error('The file does not exist!');
+    if (!fs.existsSync(pathName)) throw Error('The file does not exist!');
 
     const file = XLSX.readFile(pathName);
 
-    if(!file.SheetNames.includes(carrera)) throw Error('The specified sheet does not exist!');
-    
+    if (!file.SheetNames.includes(carrera)) throw Error('The specified sheet does not exist!');
+
     const sheet = file.Sheets[carrera];
-    
+
     let data = XLSX.utils.sheet_to_json(sheet);
 
     const arregloSemestres = [];
@@ -22,19 +22,19 @@ const getCarreraData = ( pathName, carrera ) => {
         let filaPrerequisito = row["__EMPTY"];
         let materia = {};
         if (!filaMateria.includes("Semestre")) {
-        materia["nombre"] = filaMateria;
-        materia["prerequisitos"] =
-            filaPrerequisito === "null" || !filaPrerequisito
-            ? []
-            : filaMateria.split(",");
-        semestre.push(materia);
+            materia["nombre"] = filaMateria;
+            materia["prerequisitos"] =
+                filaPrerequisito === "null" || !filaPrerequisito
+                    ? []
+                    : filaPrerequisito.split(",");
+            semestre.push(materia);
         } else {
-        arregloSemestres.push(semestre);
-        semestre = [];
+            arregloSemestres.push(semestre);
+            semestre = [];
         }
 
         if (index === data.length - 1) {
-        arregloSemestres.push(semestre);
+            arregloSemestres.push(semestre);
         }
     });
 
@@ -42,6 +42,6 @@ const getCarreraData = ( pathName, carrera ) => {
 }
 
 module.exports = {
-  getCarreraData,
+    getCarreraData,
 }
 
