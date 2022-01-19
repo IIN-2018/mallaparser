@@ -1,11 +1,17 @@
 const XLSX = require('xlsx');
 const fs = require('fs');
+const path = require('path');
 
 const getCarreraData = (pathName, carrera) => {
+    const completePath = path.join(__dirname, pathName);
 
-    if (!fs.existsSync(pathName)) throw Error('The file does not exist!');
+    const ext = path.extname(completePath);
 
-    const file = XLSX.readFile(pathName);
+    if (ext !== '.xlsx' || ext !== '.xls') throw new Error('File extension must be .xlsx or .xls');
+
+    if (!fs.existsSync(completePath)) throw Error('The file does not exist!');
+
+    const file = XLSX.readFile(completePath);
 
     if (!file.SheetNames.includes(carrera)) throw Error('The specified sheet does not exist!');
 
@@ -40,6 +46,7 @@ const getCarreraData = (pathName, carrera) => {
 
     return arregloSemestres;
 }
+getCarreraData("public", "IIN");
 
 module.exports = {
     getCarreraData,
