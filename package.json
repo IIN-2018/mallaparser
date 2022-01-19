@@ -1,6 +1,6 @@
 {
   "name": "@iin-2018/mallaparser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parsear la malla",
   "main": "src/index.js",
   "scripts": {
