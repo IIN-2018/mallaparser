@@ -3,11 +3,15 @@ const fs = require('fs');
 const path = require('path');
 
 const getCarreraData = (pathName, carrera) => {
-    const completePath = path.join(__dirname, pathName);
+    const completePath = path.join(pathName);
 
     const ext = path.extname(completePath);
 
-    if (ext !== '.xlsx' || ext !== '.xls') throw new Error('File extension must be .xlsx or .xls');
+    if (ext !== '.xlsx') {
+        if (ext !== '.xls') throw new Error('File extension must be .xls');
+        throw new Error('File extension must be .xlsx');
+    }
+
 
     if (!fs.existsSync(completePath)) throw Error('The file does not exist!');
 
@@ -46,7 +50,6 @@ const getCarreraData = (pathName, carrera) => {
 
     return arregloSemestres;
 }
-getCarreraData("public", "IIN");
 
 module.exports = {
     getCarreraData,
