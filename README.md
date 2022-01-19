@@ -1,5 +1,7 @@
 # Malla Parser
 ## Permite parsear el excel de la malla de los semestres de las carreras.
+Excel:
+https://docs.google.com/spreadsheets/d/14H_6GhLDCcWcdrVYBNNJrnagThesPS38Y64ZpR7IPH4/edit#gid=0
 
 ## Para poder usar 
 ```bash
@@ -17,5 +19,27 @@
 1. getCarreraData(pathName,carrera)
 
 Obs:
-pathName -> Path del Excel
-carrera -> La carrera que necesitas
+- pathName -> Path del Excel
+- carrera -> La carrera que necesitas
+- Las carreras disponibles son:
+    - IIN
+    - IEN
+    - ICM
+    - IAE
+    - IEL
+    - IEK-Control Industrial
+    - LCI
+    - IEK-Mecatronica
+    - IEK-Teleprocesamiento de Informacion
+    - IEK-Electronica Medica
+    - LGH-Gastronomia
+    - LGH-Hoteleria
+    - LGH-Turismo
+    - IMK
+    - ISP
+    - LCIK-Analisis de Sistemas Informatico
+    - LCIK-Programacion de Computadoras
+    - LEL
+    - LCA
+
+    - 
