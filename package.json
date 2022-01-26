@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "deploy": "npm publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose"
   },
   "author": {
     "name": "Matias Ramirez",
@@ -26,6 +26,9 @@
     "url": "git+https://github.com/IIN-2018/mallaparser.git"
   },
   "dependencies": {
-    "xlsx": "^0.16.9"
+    "xlsx": "^0.17.5"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
   }
 }
