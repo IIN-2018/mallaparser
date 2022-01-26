@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "deploy": "npm publish",
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "release": "standard-version"
   },
   "author": {
     "name": "Matias Ramirez",
